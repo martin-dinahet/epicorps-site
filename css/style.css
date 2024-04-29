@@ -416,7 +416,7 @@ grid-template-columns: 1fr;
 
 
 .card .profile-details {
-  display: block;
+  display: flex;
   align-items: center;
   column-gap: 12px;
   padding: 15px;
