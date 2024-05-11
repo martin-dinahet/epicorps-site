@@ -1,276 +1,397 @@
+
+
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  scroll-behavior: smooth;
-  font-family: "Open Sans", sans-serif;
-}
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+   scroll-behavior: smooth;
+   font-family: 'Open sans' , sans-serif;
 
-:root {
-  --text-color: #fff;
-  --bg-color:black;
-  --main-color: #ffa343;
-
-  --h1-font: 6rem;
-  --h2-font: 3rem;
-  --p-font: 1rem;
-}
-
-body {
-  color: var(--text-color);
-  background: var(--bg-color);
-}
-
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  width: 100%;
-  background:transparent;
-  padding: 27px 17%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: all .50s ease;
- 
-}
-
-.logo {
-  font-size: 33px;
-  color: var(--text-color);
-  font-weight: 700;
-
-}
-
-.navbar {
-  display: flex;
-}
-
-.navbar a {
-  color: var(--text-color);
-  font-size: var(--p-font);
-  font-weight: 500;
-  margin: 15px 22px;
-  /* Réduit la marge sur le côté droit */
-  transition: all .50s ease;
-}
-
-.navbar a:hover {
-  color: var(--main-color);
-}
-
-.h-right {
-  display: flex;
-  align-items: center;
-}
-
-.h-right a:first-child {
-  color: var(--text-color);
-  font-size: var(--p-font);
-  margin-right: 20px;
-}
-
-.h-right a {
-  vertical-align: middle;
-  font-size: 20px;
-  color: var(--text-color);
-  margin-right: 18px;
- margin-left: 5px;
-  transition: all .50s ease;
-}
-
-.h-right a:hover {
-  color: var(--main-color);
-  transform: translateY(-3px);
-}
-
-#menu-icon {
-  color: var(--text-color);
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 10001;
-  display: none;
-}
-
-section{
-  padding: 70px 17% 60px;
-}
+  }
+  :root{
+   --h1-font:3rem;
+   --h2-font:2rem;
+   --p-font:1rem;
+  }
 
 
-
-
-
-.Home {
-
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image:url("https://images.pexels.com/photos/6296905/pexels-photo-6296905.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load") ;
-  background-size: cover;
-  background-position: bottom center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-}
-
-
-.home-text h1{
-  font-size: var(--h1-font);
 
 
 
 
   
-}
-
-
-.home-text p{
-  background-color: #fff;
-  color: black;
-  border-radius: 10px;
-  margin-top: 300px;
-
  
 
+  header{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color:white;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease; 
+  }
+  header.sticky{
+    padding: 8px 17%;
+    background:white;
+    backdrop-filter: blur(35px);
+  }
   
+  .logo{
+
+    font-size: 33px;
+    color:navy;
+    font-weight: 700;
+    
+  }
+  .navbar{
+    display: flex;
+  
+  }
+  .navbar a{
+    
+    font-family: 'Open sans' , sans-serif;
+    text-decoration: none;
+    color: navy;
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all .50s ease;
+  }
+  .navbar a:hover{
+    color: red;
+  }
+  .h-right{
+    
+    display: flex;
+    align-items: center;
+  }
+  .h-right a:first-child{
+    text-decoration: none;
+    color: navy;
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+  .h-right a{
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 20px;
+    color: navy;
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all .50s ease;
+  }
+  .h-right a:hover{
+    color: red;
+    transform: translateY(-3px);
+  }
+  #menu-icon{
+    color: navy;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+  }
+  section{
+    padding: 70px 17% 60px ;
+  }
+  
+ 
+
+  .Home {
+    margin: 0;
+    padding: 0;
+    height: 85vh;
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-home h1{
+    text-align: center;
+    color: Navy;
+    margin-bottom: auto;
+    font-size: var(--h1-font);
+    transition: transform 0.6s;
+  }
+  .text-home h1:hover{
+    color:red;
+    transform: translateX(-4px);
+  }
+  
+  
+  
+ 
+  .text-home p{
+    color: black;
+    font-family: 'Teko', sans-serif;
+    font-size: var(--p-font);
+    text-align: justify;
+   padding-left: 10px;
+   margin-right: 20px;
+   line-height: 20px;  
+    transition: transform 0.6s;
+  }
+  .text-home p:hover{
+   
+    color:navy;
+    transform: translateX(-4px);
+  }
+   
+  
+
+ 
+  .text-home{
+    margin-top: 50px;
+  }
+
+  .basketball-text h1{
+    color: black;
+    font-size: var(--h1-font);
+    margin-left: 30px; 
+   transition: transform 0.6s;
 }
-
-
-
-
-header.sticky{
-  padding: 8px 17%;
-  background: transparent;
-  backdrop-filter: blur(35px);
+.basketball-text h1:hover{
+  color:red;
+  transform: translateX(-4px);
 }
+  .basketball {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem; 
+    background-color:white;
+    color: #000;
+    padding: 20px;
+  }
+  
+  .basketball img {
+    
+    
+    height: auto; 
+    margin: 0 auto; 
+    display: block; 
+ 
+  }
+  .basketball img:hover {
+    filter: brightness(90%) hue-rotate(50deg);
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+  
+  .basketball-text p {
+    font-family: 'Teko', sans-serif;
+    font-size: var(--p-font);
+    text-align: justify;
+    padding: 20px; 
+    line-height: 20px;
+    transition: transform 0.6s;
+  }
+  .basketball-text p:hover{
+   
+    color:navy;
+    transform: translateX(-4px);
+  }
+  
 
+  
 
-.basketball{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  align-items: center;
-  gap:9rem;
-}
-.basketball-img img{
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-
-}
-.basketball-img img:hover {
-  filter: brightness(90%) hue-rotate(50deg);
-  transform: scale(1.04);
-  cursor: pointer;
-
-}
-.basketball-title h1{
-  font-size: 33px;
-  font-weight: 1000;
-  color:whitesmoke;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-
-
-}
-.basketball-text p{
-  font-size: var(--p-font);
-  font-weight: 500;
-  line-height: 30px;
-  color: #ffffffab;
-  margin-bottom: 35px;
-}
-.basketball-text p:hover {
-  filter: brightness(90%) hue-rotate(50deg);
-  transform: scale(1.04);
-  cursor: pointer;
-}
 .center-text {
   text-align: center;
+  background-color: white;
 }
 
 
 .center-text h2 {
-  font-size: 33px;
+  font-size: var(--h2-font);
   font-weight: 1000;
-  color:whitesmoke;
+  color: Navy;
   letter-spacing: 3px;
   margin-bottom: 20px;
-}
-
-
-
-
-
-.footer{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(20px,auto));
-  gap:2rem;
-}
-.footer-box{
-  display: flex;
-  flex-direction: column;
-}
-.footer-box h2{
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  
-}
-.footer-box h2{
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-
-.footer-box p{
-  font-family: 'Times New Roman', Times, serif;
-}
-.footer-box a{
-  color:#979797;
-  margin-bottom: 0,8rem;
-  transition: all .50s ease;
-  font-family: 'Times New Roman', Times, serif;
-
-}
-.footer-box a:hover{
-  transform: translateX(-5px);
-  color:var(--text-color);
-}
-.social a{
-
-  align-items: center;
-  justify-content: center;
-  height: 45px;
-  width: 45px;
-  background-color:black;
-  color:whitesmoke;
-  font-size: 20px;
-  border-radius: 50%;
-  margin-right:8px ;
   transition: transform 0.6s;
 }
-.social a:hover{
-  background-color: var(--main-color);
-  color:var(--bg-color);
+.center-text h2:hover{
+  
+  color:red;
   transform: translateX(-4px);
 }
-.copyright-box p{
-  text-align: center;
-  padding: 20px;
-  color:#979797;
-  font-size: 15px;
+
+
+.center-text h1{
+  font-size: var(--h1-font);
+  color: Navy;
+  transition: transform 0.6s;
 }
-@media(max-width:1200px){
+.center-text h1:hover{
+  
+  color:red;
+  transform: translateX(-4px);
+}
+
+
+
+  
+  .photo-box h1{
+    font-size: 6rem;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-280%, -160%); 
+     margin-top: 330px;
+    
+  }
+  .photo-box img{
+    max-width: 100%;
+    height: auto;
+    margin: 80px;
+  }
+ 
+  
+  .photo-box{
+    position: relative;
+    background-color: white;
+  }
+  .photo-box p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: var(--p-font);
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-140%, -100%); 
+  text-align: justify;
+  background-color:white;
+  padding: 5px;
+  margin-top: 350px;
+  width: 30%;
+  color: #000;
+  
+  }
+span{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.joueurs{
+  background-color: #ffa343;
+}
+.tab-pane.fade.show.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.tile__team__entry {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  background: #f8f8f8;
+}
+
+.team__entry__schedule, .team__entry__box-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__entry__name h3 a {
+  color: red; 
+  text-decoration: none;
+}
+
+.team__entry__last-game span {
+  color: red; 
+}
+
+.team__entry__schedule__score a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.box-number {
+  font-weight: bold;
+  color: #333;
+}
+
+.team__entry__picture img {
+ background-color: #f8f8f8;
+background-size: cover;
+  width: 100px;
+ 
+}
+.team__entry__win-loose {
+  color: #f8f8f8;
+}
+
+.token__container span, .team__entry__win-loose {
+  text-decoration: none;
+  display: flex;
+}
+
+.token__container span {
+  margin-bottom: 20px;
+  margin: 0;
+}
+
+.token__container span, .team__entry__win-loose {
+  text-decoration: none;
+  display: flex;
+}
+
+.token__container span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.derniers_matchs {
+  background-color: rgb(3, 3, 92);
+  padding: 9px;
+ 
+}
+
+.win {
+  background-color: #28a745;
+}
+
+.loose {
+  background-color: #dc3545;
+}
+/************** responsive*******************/
+@media (max-width: 1700px){
+  header{
+    padding: 18px 8%;
+  }
+  header.sticky{
+    padding: 7px 8%;
+  }
+  section{
+    padding: 50px 8% 40px;
+  }
+}
+@media (max-width: 1200px){
   header{
     padding: 14px 5%;
-  
   }
   header.sticky{
     padding: 7px 5%;
@@ -278,184 +399,492 @@ header.sticky{
   section{
     padding: 45px 5% 35px;
   }
-  :root{
-    --h1-font: 4.6rem;
-    --h2-font: 2.8rem;
-    --p-font: 15px;
+
+    :root{
+      --h1-font:2.8rem;
+      --h2-font:0.5rem;
+      --p-font:15px;
+
   }
   .Home{
     height: 90vh;
   }
-}
+  .center-text h2{
+    font-size: 2rem;
+  }
 
-@media(max-width:1050px){
+}
+@media (max-width: 1050px){
+
   .basketball{
-    gap:3rem;
-  }
-  .tour{
     gap: 3rem;
   }
-  .home-packages{
+  .photo-box{
     gap: 3rem;
   }
-
-#menu-icon{
-  display: block;
-}
-
-.navbar{
-  position:absolute;
-  width: 100%;
-  height: 100vh;
-  padding: 40px 60px;
-  top:0;
-  bottom:O;
-  left:100%;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  background: var(--bg-color);
-  transition: all .50s ease;
-
- }
- .navbar a{
-  display: block;
-  color: #979797;
-  padding: 0;
-  margin: 0px 0px 40px 0px;
-  font-size: 2.2rem;
-  font-weight: 400;
- }
- .navbar .open{
-  left: 0;
- }
-}
-
-@media(max-width:800px){
-.basketball{
-grid-template-columns: 1fr;
-}
-.tour{
-  grid-template-columns: 1fr;
-}
-.home-packages{
-  grid-template-columns: 1fr; 
-}
-}
-@media(max-width:600px){
-  :root{
-    --h1-font: 3.5rem;
-    --h2-font: 2.1rem;
+  #menu-icon {
+    display: block;
+  }
   
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 60px;
+    top: 0;
+    left: 100%; 
+    display: flex;
+    flex-direction: column;
+    background:white ;
+    transition: all 0.5s ease;
   }
-  .home{
+  
+  .navbar a {
+    display: block;
+    color: navy;
+    padding: 0;
+    margin: 0 0 40px 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  
+  .navbar.open {
+    left: 0;
+  }
+  
+.center-text h2{
+  font-size: 1rem;
+}
+.center-text h2{
+  font-size: 2rem;
+}
+ .evenement{
+  flex-wrap: wrap;
+}
+.match .bouton-bouton-box{
+  flex-wrap: wrap;
+  margin-right:100px ;
+}
+}
+@media (max-width: 800px){
+  .Home{
+    flex-wrap: wrap;
+  }
+ 
+  .image-home{
+  margin-right: 100px;
+  }
+  .basketball{
+    margin-top: 200px;
+    grid-template-columns: 3fr;
+  }
+  .photo-box{
+    grid-template-columns: 4fr;
+  }
+  .photo-box img{
+    padding-right: 70px;
+  }
+  .center-text h2{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px){
+      :root{
+      --h1-font:2.1rem;
+      --h2-font:0.3rem;
+  }
+  .Home{
     height: 85vh;
   }
-
+  .image-home{
+    margin-right: 300px;
+    }
+    .basketball-img img{
+      width: 550px;
+    }
+    .basketball-text h1{
+      margin-top: 20px;
+    }
+    .center-text h2{
+      font-size: 2rem;
+    }
+    .images{
+      flex-wrap: wrap;
+    }
+   
+   
+   
+   
 }
-@media(max-width:450px){
+@media (max-width: 450px){
   header{
     padding: 12px 3%;
-  
   }
   header.sticky{
     padding: 7px 3%;
   }
   section{
-    padding: 60px 3% 50px;
+    padding: 60px 3% 40px;
   }
+  .image-home{
+    margin-left: 60px;
+    }
+    .basketball-img img{
+      width: 300px;
+    }
+    .basketball-text h1{
+      margin-top: 60px;
+    }
+    .center-text h2{
+      font-size: 1rem;
+    }
+    
 }
 
 
 
 
+ /***** billetterie*****/
 
-
-
-
-.container {
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-
-  min-height: 100px;
-
+ .global{
+  background-color: whitesmoke;
+ }
+.temps{
   display: flex;
+background-image: linear-gradient(to left,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(../img/bill.jpg) ;
+background-size:cover ;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+}
+#bloc1, #bloc2, #bloc3 {
+  margin:  0 auto;
+}
+#bloc2 h1 {
+  font-size: 30px;
+  margin: 20px 0; 
+  background-color: red;
+  border-radius: 50px;
+  color: white;
+  padding: 9px;
+}
+.photo h2{
+  text-align: center;
 
+}
+#bloc2{
+  margin-top: 50px;
+}
+h5 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  color: white;
+}
+ h2, p, h5{
+ text-align: center;
+}
+#bloc2 p, h2{
+  color:white;
+}
+
+.countdown {
+  display: flex;
+  margin-left: 10px;
+  color: white;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; 
+}
+.photo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.photo img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid whitesmoke;
+}
+
+.bouton{
+  text-align: center;
+  margin-top: 50%;
+}
+.btn-acheter{
+  width: 120px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: blue;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.evenement{
+  display: flex;
+  padding: 60px;
+ 
+}
+.btn {
+  background-color:whitesmoke;
+  border-radius: 20px;
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 10px;
+
+}
+ .evenement h2{
+  margin-right: 800px;
+  color: red;
+  font-size: 30px;
+  
+ 
   
  
 }
+.billets {
+  background-color: whitesmoke;
+  margin: 0 auto; 
+  padding: 0; 
+  overflow: hidden; 
+  border-radius: 10px ;
+  
+}
 
-.slide-container {
-  margin: 0 30px;
-  overflow: hidden;
+.box-bill img {
+  max-width: 300px;
+  float: left;
 }
 
 
-.card {
-  background: black;
-  border-radius: 8px;
-}
-
-.card .image-box {
-  height: 200px;
-}
-.card .image-box img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px 8px 0 0;
-  colo
-}
-.card .image-box img:hover {
-  filter: brightness(90%) hue-rotate(50deg);
-  transform: scale(1.04);
-  cursor: pointer;
-}
+.box-bill h2, .box-bill p { 
+  color: black;
+ margin-right: 800px;
 
 
-.card .profile-details {
+
+}
+.box-bill h2{
+  text-align: center;
+}
+ .title h1{
+  background-color: #ffa343;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  color:white;
+ padding: 5px;
+}
+.bouton-bouton  {
+  display: flex;
+}
+
+.bouton-bouton h3{
+  color: black;
+ 
+}
+.bouton-bouton h3, .bouton-bouton btn-box{
+  margin-left: 900px;
+}
+.btn-box{
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: blue;
+  color: aliceblue;
+  font-size: 15px;
+
+}
+.match {
+  background-color:whitesmoke;
+  margin: 0 auto; 
+  padding: 0; 
+  border-radius: 10px;
+}
+.box-match img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid whitesmoke;
+  
+}
+
+.images{
+ 
   display: flex;
   align-items: center;
-  column-gap: 12px;
-  padding: 15px;
-}
+  margin-left: 250px;
+  margin-bottom: 70px;
 
-.profile-details .name {
+  
+}
+.bouton-bouton-box{
+  display: flex;
+  margin-left: 360px; 
+  margin-top: 40px;
+}
+.btn-bouton{
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: blue;
+  color: aliceblue;
+  font-size: 15px; 
+}
+.box-match{
+  display: flex;
+}
+.pp h2 {
   font-size: 15px;
-  font-weight: 500;
+  color: #000;
 }
-.profile-details .text {
-  font-size: 12px;
-  font-weight: 500;
-  color: whitesmoke;
+.pp p{
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  
 }
-.swiper-navBtn {
-  color: whitesmoke;
-  height: 40px;
-  width: 40px;
-  background:white;
-  border-radius: 50%;
+.pp{
+  margin-top: 30px;
 }
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-  font-size: 18px;
+.images img, h3{
+ text-align: center;
+ color: #000;
+}
+.title2 h1{
+  background-color: blue;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+ justify-content: center;
+ padding: 10px;
+
+}
+.images p{
+  color: #000;
+margin-bottom: 30px;
+}
+  
 
 
+/********** footer ***********/
 
-
+.footer{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(20px,auto));
+  gap:2rem;
+  background-color: Navy;
+  padding: 10px 5%;
+  
 }
-.swiper-pagination-bullet {
-  background-color: #000;
+.footer-box{
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer-box h2{
+  font-size: var(--h2-font);
+  font-weight: 600;
+  margin-bottom: 15px;
+ 
+  
+}
+.footer-box h3{
+  color: #fff;
+  text-align: justify;
+  margin-top: 60px;
+  
  
 }
+.footer-box img{
+  width: 100px;
+  height: 60px;
+  margin-top: 30px;
 
-
-
- 
-@media screen and (max-width: 768px) {
-  .swiper-navBtn {
-    display: none;
-  }
 }
+
+
+
+.footer-box p{
+  font-family: 'Times New Roman', Times, serif;
+  color:white;
+  text-align: justify;
+  font-size: var(--p-font);
+
+
+  
+}
+.footer-box a{
+  text-decoration: none;
+  color:white;
+  transition: all .50s ease;
+  font-family: 'Times New Roman', Times, serif;
+  
+
+}
+.footer-box a:hover{
+  transform: translateX(-5px);
+  color:white;
+}
+.social a{
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  background-color:whitesmoke;
+  color:black;
+  font-size: 20px;
+  margin-right:4px ;
+ margin-left: 5px;
+  transition: transform 0.6s;
+  border-radius: 5px;
+}
+.social a:hover{
+  background-color: red;
+  color:white;
+  transform: translateX(-4px);
+}
+.ligne {
+  border-top: 2px solid whitesmoke; 
+ 
+  
+}
+.copyright-box{
+  background-color: Navy;
+}
+.copyright-box p{
+  text-align: center;
+  padding: 20px;
+  color:whitesmoke;
+  font-size: var(--p-font);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

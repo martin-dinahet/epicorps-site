@@ -2,212 +2,444 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <header>
-    <a href="#" class="logo">FFBB</a>
-
-    <ul class="navbar">
-
-      <li><a href="#">NOS ATHELETES</a></li>
-      <li><a href="#">CAMPAGNES</a></li>
-      <li><a href="#">ACTUALITES</a></li>
-      <li><a href="#">BOUTIQUE</a></li>
-    </ul>
-
-    <div class="h-right">
-      <a href="#"><i class="ri-dribbble-line"></i></a>
-      <a href="#"><i class="ri-search-line"></i></a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-    </div>
-  </header>
-
-
-
-  <section class="Home">
-    <div class="home-text">
-      <h1> ATH<br>ELE<br>TES</h1>
-      <p> Le Lorem Ipsum est simplement du<br>
-        faux texte employé dans la composition
-        et la mise en page avant impression.
-        Le Lorem Ipsum est le <br>faux texte standard
-        de l'imprimerie depuis les années 1500,
-        quand un imprimeur anonyme<br> assembla ensemble
-        des morceaux de texte pour réaliser <br>un livre spécimen</p>
-
-
-    </div>
-  </section>
-
-  <section class="basketball">
-
-    <div class="basketball-title">
-      <h1> la délégation</h1>
-    </div>
-    <br>
-
-    <div class="basketball-img">
-      <img src="img/h1.png">
-    </div>
-
-    <div class="basketball-text">
-      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition
-        et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard
-        de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble
-        des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas
-        fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique,
-        sans que son contenu n'en soit modifié.</p>
-
-    </div>
-  </section>
-  <section class="tour">
-    <div class="center-text">
-      <h1> LES MEILLEURES <BR> PERFORMANCES</h1>
-      <br><br>
-      <h2>les 7 derniers jours </h2>
-    </div>
-  </section>
-  <div class="container swiper">
-    <div class="slide-container">
-      <div class="card-wrapper swiper-wrapper">
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="img/nadir.jpg" alt="" />
-          </div>
-
-          <div class="profile-details">
-
-            <div class="name-text">
-              <h3 class="name">NADIR</h3>
-              <h4 class="text"> HIFI<br><br>Paris<br>DERNIER MATCH<br>21/04/2024<br>66-86<br>17 PTS 2 REB 1 AST</h4>
-            </div>
-          </div>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="" width="100" height="50">
         </div>
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="img/nadir.jpg" alt="" />
-          </div>
-          <div class="profile-details">
 
-            <div class="name-text">
-              <h3 class="name">NADIR</h3>
-              <h4 class="text"> HIFI<br><br>Paris<br>DERNIER MATCH<br>21/04/2024<br>66-86<br>17 PTS 2 REB 1 AST</h4>
-            </div>
-          </div>
+        <ul class="navbar">
+            <li><a href="index.html"><i class="ri-home-2-line"></i></a></li>
+            <li><a href="PORTRAITS.html">PORTRAITS</a></li>
+            <li><a href="BILLETTERIE.html">BILLETTERIE</a></li>
+            <li><a href="ACTUALITES.html">ACTUALITES</a></li>
+            <li><a href="BOUTIQUE.html">BOUTIQUE</a></li>
+        </ul>
+
+        <div class="h-right">
+           
+         
+                <input type="text" placeholder="" required>
+                <a href="#"><i class="ri-search-line"></i></a>
+                <a href="#"><i class="ri-dribbble-line"></i></a>
+                <select id="languageSelector">
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+                </select>
+                <div class="bx bx-menu" id="menu-icon"></div>
+
         </div>
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="img/nadir.jpg" alt="" />
-          </div>
-          <div class="profile-details">
+    </header>
 
-            <div class="name-text">
-              <h3 class="name">NADIR</h3>
-              <h4 class="text"> HIFI<br><br>Paris<br>DERNIER MATCH<br>21/04/2024<br>66-86<br>17 PTS 2 REB 1 AST</h4>
-            </div>
-          </div>
+
+
+
+
+    <section class="Home">
+        <div class="image-home">
+            <img src="img/ima1.jpg" width="900" height="600" alt="">
         </div>
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="img/nadir.jpg" alt="" />
-          </div>
-          <div class="profile-details">
-
-            <div class="name-text">
-              <h3 class="name">NADIR</h3>
-              <h4 class="text"> HIFI<br><br>Paris<br>DERNIER MATCH<br>21/04/2024<br>66-86<br>17 PTS 2 REB 1 AST</h4>
-            </div>
-          </div>
+        <div class="text-home">
+            <h1>LA DELEGATION</h1>
+            <br>
+            <p>Fédération Française de Basket-Ball (FFBB): La FFBB est l’organisme qui régit le basket-ball en France.
+                Elle
+                supervise les compétitions, les équipes nationales et le développement du sport dans le pays.<br><br>
+                Elle est responsable de la promotion et de la gestion du basket-ball en France. Elle organise des
+                compétitions
+                nationales, soutient les clubs et les joueurs, et encourage le développement du sport à tous les niveaux
+            </p>
         </div>
-        <div class="card swiper-slide">
-          <div class="image-box">
-            <img src="img/nadir.jpg" alt="" />
-          </div>
-          <div class="profile-details">
-
-            <div class="name-text">
-              <h3 class="name">NADIR</h3>
-              <h4 class="text"> HIFI<br><br>Paris<br>DERNIER MATCH<br>21/04/2024<br>66-86<br>17 PTS 2 REB 1 AST</h4>
+        
+    </section>
 
 
-            </div>
-          </div>
+
+
+    <section class="basketball">
+
+        <div class="basketball-text">
+
+            <h1> JOUEURS A SUIVRE !!! </h1>
+
+            <p> Victor Wembanyama est une étoile montante du basket-ball français. À seulement 17 ans, il est considéré
+                comme l’un des meilleurs espoirs mondiaux. Sa taille (2,18 mètres) et ses compétences polyvalentes en
+                font un joueur à surveiller. Il a exprimé son désir de représenter la France aux Jeux Olympiques 2024 à
+                Paris.
+                <br><br>
+                Zaccharie Risacher est une autre pépite française. Il a récemment réalisé une performance exceptionnelle
+                lors d’un match avec la JL Bourg, marquant 18 points à 100 % au tir. Son jeu complet et son potentiel
+                font de lui un joueur à suivre de près. Risacher pourrait égalemt être un choix de premier tour lors de
+                la prochaine draft NBA34.
+                <br><br>
+                En somme, ces deux jeunes talents français, Victor Wembanyama et Zaccharie Risacher, sont des joueurs à
+                surveiller lors des Jeux Olympiques 2024 à Paris. Leur présence sur le terrain promet d’être
+                passionnante pour les amateurs de basket-ball du monde entier
+            </p>
         </div>
-      </div>
-    </div>
-    <div class="swiper-button-next swiper-navBtn"></div>
-    <div class="swiper-button-prev swiper-navBtn"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-  <section class="footer">
-    <div class="footer-box">
-      <h2>FFBB</h2>
-      <p>Le site officiel de l'équipe basketball de France</p>
-      <br><br>
-      <div class="social">
-        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-        <a href="#"><i class="ri-twitter-fill"></i></a>
-        <a href="#"><i class="ri-instagram-fill"></i></a>
-        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-        <a href="#"><i class="ri-youtube-fill"></i></a>
-      </div>
-    </div>
+        <div class="basketball-img" alt="">
+            <img src="img/h1.png">
+        </div>
+    </section>
 
-    <div class="footer-box">
-      <h3>Partenaires</h3>
-      <a href="#">Crédit Agricole</a>
-      <a href="#"> EDF</a>
-      <a href="#">Nike</a>
-      <a href="#">Uber Eats</a>
-      <a href="#">Orange</a>
-    </div>
+    <section class="photo-box">
+        <img src="img/jo.jpg" alt="">
+        <h1>ACT<br>UALI<br>TES</h1>
+        <p><span class="suivant">ZACCHARIE RISACHER ÉLU MEILLEUR JEUNE DE LA SAISON D’EUROCUP </span>
+            <br>
+            Zaccharie Risacher (JL Bourg-en-Bresse) a remporté le titre de Rising Star récompensant le
+            meilleur jeune de la saison d'EuroCup. Il devance un autre membre du Team France Basket,
+            Nadir Hifi (Paris Basketball).
+        </p>
 
-    <div class="footer-box">
-      <h3>FFBB</h3>
-      <a href="#">Qui somme nous ?</a>
-      <a href="#"> Notre engagement</a>
-      <a href="#">Nos actions</a>
-      <a href="#">Les réglements </a>
-      <a href="#">Actualités</a>
-    </div>
+    </section>
+
+    <section class="center-text">
+        <h1> LES MEILLEURES <BR> PERFORMANCES</h1>
+        <br><br>
+        <h2>les 7 derniers jours </h2>
+    </section>
 
 
-    <div class="footer-box">
-      <h3> Nos Services </h3>
-      <a href="#">CGU</a>
-      <a href="#"> Mention légales</a>
-      <a href="#">Chatbot</a>
-      <a href="#">Préférences cookies </a>
-      <a href="#">Protection des données personnelles</a>
-    </div>
+    <section class="tab-pane fade show active">
 
-    <div class="footer-box">
-      <h3> Communauté </h3>
-      <a href="#">Devenir membre</a>
-      <a href="#">inscription newsletter</a>
-      <a href="#">Faire un Don</a>
+        <div class="tile__team__entry">
 
-    </div>
-  </section>
-  <section class="copyright-box">
-    <div classe="copyright">
-      <p>Copyright @ 2024 FFBB All Rights Reserved Terms and Conditions Privacy Policy</p>
-    </div>
-  </section>
-  <script src="src/swiper-bundle.min.js"></script>
-  <script src="src/script.js"></script>
+            <div class="team__entry__picture">
+                <img src="img/nadir.jpg" alt="">
+            </div>
+
+            <div class="team__entry__name">
+                <h3>
+                    <a href="#" class="item-player-button" title="NADIR HIFI">
+                        <span>NADIR</span><br>HIFI
+                    </a>
+                </h3>
+            </div>
+            <br>
+            <div class="team__entry__last-game">
+                <span>Paris</span>
+            </div>
+            <div class="team__entry__last-game">
+                <p>Dernier match</p>
+                <span>21/04/2024</span>
+            </div>
+            <br>
+            <div class="team__entry__schedule">
+                <div class="team__entry__schedule__team">
+                    <img src="https://www.proballers.com/api/getTeamLogo?idteam=154&width=50" alt="">
+                </div>
+                <div class="team__entry__schedule__score">
+                    <a href="/game/747075" title="Voir le match">
+                        66-86
+                    </a>
+                </div>
+
+                <div class="team__entry__schedule__team">
+                    <img src="https://www.proballers.com/api/getTeamLogo?idteam=13219&width=50" alt="">
+                </div>
+            </div>
+            <br>
+            <div class="team__entry__box-number">
+                <div class="box-number">
+                    17 PTS
+                </div>
+                <div class="box-number">
+                    2 REB
+                </div>
+                <div class="box-number">
+                    1 AST
+                </div>
+            </div>
+            <br>
+            <div class="derniers_matchs">
+                <a class="team__entry__win-loose" href=""
+                    title="Voir les derniers matchs">
+                    5 derniers Matchs
+
+                    <div class="token__container">
+                        <span class="win"></span>
+                        <span class="win"></span>
+                        <span class="loose"></span>
+                        <span class="win"></span>
+                        <span class="loose"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="tile__team__entry">
+            <div class="team__entry__picture">
+                <img src="img/6124c 1.png" alt="">
+            </div>
+            <div class="team__entry__name">
+                <h3>
+                    <a href="#" class="item-player-button" title="VICTOR WEMBANYAMA">
+                        <span>VICTOR</span><br>WEMBANYAMA
+                    </a>
+                </h3>
+            </div>
+            <br>
+            <div class="team__entry__last-game">
+                <span>San Antonio Spurs</span>
+            </div>
+            <div class="team__entry__last-game">
+                <p>Dernier match</p>
+                <span>13/04/2024</span>
+            </div>
+            <br>
+            
+            <div class="team__entry__schedule">
+                <div class="team__entry__schedule__team">
+                    <img src="https://www.proballers.com/api/getTeamLogo?idteam=123&amp;width=50" alt="">
+                </div>
+                <div class="team__entry__schedule__score">
+                    <a href="/game/778813" title="Voir le match">
+                        121-120
+                    </a>
+                </div>
+  
+                <div class="team__entry__schedule__team">
+                    <img src="https://www.proballers.com/api/getTeamLogo?idteam=5&amp;width=50" alt="">
+                </div>
+            </div>
+            <div class="team__entry__box-number">
+                <div class="box-number">
+                    34 PTS
+                </div>
+                <div class="box-number">
+                    12 REB
+                </div>
+                <div class="box-number">
+                    5 AST
+                </div>
+            </div>
+             <br>
+            <div class="derniers_matchs">
+
+                <a class="team__entry__win-loose" href=""
+                    title="Voir les derniers matchs">
+                    5 derniers Matchs
+
+                    <div class="token__container">
+                        <span class="win"></span>
+                        <span class="loose"></span>
+                        <span class="win"></span>
+                        <span class="win"></span>
+                        <span class="win"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="tile__team__entry">
+            <div class="team__entry__picture">
+                <img src="img/23275-3-5f7c338abb5614 1.png" alt="">
+            </div>
+            <div class="team__entry__name">
+                <h3>
+                    <a href="#" class="item-player-button" title="ALEXANDER CHASSANG">
+                        <span>ALEXANDER</span><br>CHASSANG
+                    </a>
+                </h3>
+            </div>
+            <br>
+            <div class="team__entry__last-game">
+                <span>Limoges</span>
+            </div>
+            <div class="team__entry__last-game">
+                <p>Dernier match</p>
+                <span>20/04/2024</span>
+            </div>
+            <br>
+            
+            <div class="team__entry__schedule">
+                <div class="team__entry__schedule__team">
+                    <img src="https://www.proballers.com/api/getTeamLogo?idteam=6&amp;width=50" alt="">
+                </div>
+                <div class="team__entry__schedule__score">
+                    <a href="/game/747076" title="Voir le match">
+                        102-99
+                    </a>
+                </div>
+
+                <div class="team__entry__schedule__team">
+                    <img src="https://www.proballers.com/api/getTeamLogo?idteam=14914&width=50" alt="">
+                </div>
+            </div>
+            <br>
+            <div class="team__entry__box-number">
+                <div class="box-number">
+                    17 PTS
+                </div>
+                <div class="box-number">
+                    10 REB
+                </div>
+                <div class="box-number">
+                    4 AST
+                </div>
+            </div>
+            <br>
+            <div class="derniers_matchs">
+
+                <a class="team__entry__win-loose" href=""
+                    title="Voir les derniers matchs">
+                    5 derniers Matchs
+
+                    <div class="token__container">
+                        <span class="win"></span>
+                        <span class="win"></span>
+                        <span class="win"></span>
+                        <span class="win"></span>
+                        <span class="win"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="tile__team__entry">
+            <div class="team__entry__picture">
+                <img src="img/zaccharie-risacher-1ee7c19a-aa8c-6994-a843-1bd6291cb895 1.png" alt="">
+            </div>
+            <div class="team__entry__name">
+                <h3>
+                    <a href="#" class="item-player-button" title="ZACCHARIE RISACHER">
+                        <span>ZACCHARIE</span><br>RISACHER
+                    </a>
+                </h3>
+            </div>
+            <br>
+            <div class="team__entry__last-game">
+                <span>Bourg-en-Bresse</span>
+            </div>
+            <div class="team__entry__last-game">
+                <p>Dernier match</p>
+                <span>21/04/2024</span>
+            </div>
+            <br>
+            <div class="team__entry__schedule">
+                <div class="team__entry__schedule__team">
+                    <img src="https://www.proballers.com/api/getTeamLogo?idteam=21&width=50" alt="">
+                </div>
+                
+                <div class="team__entry__schedule__score">
+                    <a href="/game/778822" title="Voir le match">
+                        77-74
+                    </a>
+                </div>
+               
+                <div class="team__entry__schedule__team">
+                    <img src="https://www.proballers.com/api/getTeamLogo?idteam=1&width=50" alt="">
+                </div>
+            </div>
+            <br>
+            <div class="team__entry__box-number">
+                <div class="box-number">
+                    14 PTS
+                </div>
+                <div class="box-number">
+                    7 REB
+                </div>
+                <div class="box-number">
+                    1 AST
+                </div>
+            </div>
+            <br>
+            <div class="derniers_matchs">
+
+                <a class="team__entry__win-loose" href=""
+                    title="Voir les derniers matchs">
+                    5 derniers Matchs
+
+                    <div class="token__container">
+                        <span class="win"></span>
+                        <span class="loose"></span>
+                        <span class="win"></span>
+                        <span class="win"></span>
+                        <span class="loose"></span>
+                    </div>
+                </a>
+            </div
+            
+        </div>
+
+    </section>
+    <section class="footer">
+        <div class="footer-box">
+            <img src="img/logo.jpg" alt="">
+            <p>Le site officiel de l'équipe<br> basketball de France</p>
+            <br><br><br><br>
+            <div class="social">
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+            </div>
+        </div>
+        <br><br><br><br>
+
+        <div class="footer-box">
+            <h3>Partenaires</h3>
+            <a href="#">Crédit Agricole</a>
+            <a href="#"> EDF</a>
+            <a href="#">Nike</a>
+            <a href="#">Uber Eats</a>
+            <a href="#">Orange</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>FFBB</h3>
+            <a href="#">Qui somme nous ?</a>
+            <a href="#"> Notre engagement</a>
+            <a href="#">Nos actions</a>
+            <a href="#">Les réglements </a>
+            <a href="#">Actualités</a>
+        </div>
+
+
+        <div class="footer-box">
+            <h3> Nos Services </h3>
+            <a href="#">CGU</a>
+            <a href="#"> Mention légales</a>
+            <a href="#">Chatbot</a>
+            <a href="#">Préférences cookies </a>
+            <a href="#">Protection des données personnelles</a>
+        </div>
+
+        <div class="footer-box">
+            <h3> Communauté </h3>
+            <a href="#">Devenir membre</a>
+            <a href="#">inscription newsletter</a>
+            <a href="#">Faire un Don</a>
+
+        </div>
+    </section>
+
+    <section class="copyright-box">
+        <hr class="ligne">
+        <div classe="copyright">
+            <p>Copyright @ 2024 FFBB All Rights Reserved Terms and Conditions Privacy Policy</p>
+        </div>
+    </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

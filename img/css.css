@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  text-align: center; /* Pour centrer le titre */
+}
+
+.container h2 {
+  position: absolute;
+  top: 50%; /* Positionne le titre à 50% de la hauteur du conteneur */
+  left: 50%; /* Positionne le titre à 50% de la largeur du conteneur */
+  transform: translate(-50%, -50%); /* Pour centrer parfaitement le titre */
+  background-color: rgba(255, 255, 255, 0.7); /* Arrière-plan semi-transparent pour le titre */
+  padding: 10px 20px; /* Espacement autour du texte */
+  border-radius: 5px; /* Coins arrondis */
+}
