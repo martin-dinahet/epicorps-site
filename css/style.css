@@ -953,3 +953,11 @@ h3 {
     display: none;
   }
 }
+
+.basketball {
+  margin-top: 5rem;
+}
+
+.basketball-text h1 {
+  color: red;
+}
