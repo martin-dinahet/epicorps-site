@@ -496,8 +496,7 @@ span {
 }
 .temps {
   display: flex;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-    url(../img/bill.jpg);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/bill.jpg);
   background-size: cover;
   align-items: center;
   width: 100%;
@@ -942,5 +941,15 @@ h3 {
     font-family: "Inter", sans-serif;
     font-weight: lighter;
     margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .basketball-text h1 {
+    display: none;
   }
 }
